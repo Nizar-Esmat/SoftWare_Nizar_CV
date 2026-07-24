@@ -1,0 +1,47 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,top=0.9in,bottom=0.9in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+\usepackage{parskip}
+
+% ---------- General Formatting ----------
+\pagestyle{empty}
+\emergencystretch=3em
+\sloppy
+\hypersetup{
+  pdfauthor={Nizar Esmat Fawzy},
+  pdftitle={Nizar Esmat Fawzy - Cover Letter},
+  pdfsubject={Cover Letter},
+  pdfcreator={LaTeX},
+  pdfproducer={Overleaf}
+}
+
+% ---------- Header Macro ----------
+\newcommand{\coverHeader}{
+  {\LARGE \textbf{Nizar Esmat Fawzy}}\\[0.15em]
+  Software Engineer\\[0.25em]
+  Cairo, Egypt \textbar\ +20 109 258 9504 \textbar\ \href{mailto:nizaresmat2000@gmail.com}{nizaresmat2000@gmail.com}\\[0.1em]
+  \href{https://www.linkedin.com/in/nizar-esmat-259690198}{linkedin.com/in/nizar-esmat-259690198} \textbar\
+  \href{https://github.com/Nizar-Esmat}{github.com/Nizar-Esmat} \textbar\
+  \href{https://portofilo-psi.vercel.app/}{portofilo-psi.vercel.app}
+  \vspace{1.5em}
+}
+
+\begin{document}
+
+\coverHeader
+
+\input{sections/date}
+\vspace{1em}
+
+\input{sections/recipient}
+\vspace{1.5em}
+
+\input{sections/body}
+
+\end{document}
