@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[a4paper,top=0.15in,bottom=0.15in,left=0.55in,right=0.55in]{geometry}
+\usepackage[a4paper,top=0.3in,bottom=0.3in,left=0.55in,right=0.55in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -13,13 +13,28 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 
+% ---------- ATS: proper Unicode text extraction ----------
+% Maps glyphs to Unicode so PDF text extraction (what an ATS does) returns real
+% characters instead of U+FFFD replacement chars -- notably for list bullets.
+\input{glyphtounicode}
+\pdfgentounicode=1
+
 % ---------- General Formatting ----------
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+
+% No hyphenation: line-broken words extract as "fron-tend" and split URLs apart.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\tolerance=9999
 \emergencystretch=3em
-\sloppy
-\setlist[itemize]{leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt}
+% \RaggedRight (ragged2e) not \raggedright: finite rightskip stretch, so the
+% \hfill-aligned dates and links in the macros below still sit flush right.
+\RaggedRight
+
+% label=\textbullet keeps the bullet in the text font so it maps to U+2022.
+\setlist[itemize]{label=\textbullet, leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt}
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.25em}\rule{\linewidth}{0.6pt}\vspace{-0.35em}]
 \titlespacing*{\section}{0pt}{0.15em}{0.1em}
 \hypersetup{
@@ -36,13 +51,15 @@
   \textbf{#1} \hfill \textbf{#2}\\
   \textit{#3} \hfill \textit{#4}\\[0.02em]
 }
+% Text-mode separators and link labels only -- math glyphs ($|$, $\nearrow$)
+% extract as noise or nothing at all.
 \newcommand{\projectHeading}[3]{
   \vspace{0.05em}
-  \noindent\textbf{#1} {\small $|$ \textit{#2}} \hfill {\footnotesize \href{#3}{\underline{GitHub $\nearrow$}}}\\[-0.2em]
+  \noindent\textbf{#1} {\small \textbar\ \textit{#2}} \hfill {\footnotesize \href{#3}{GitHub}}\\[-0.2em]
 }
 \newcommand{\projectHeadingLinks}[4]{
   \vspace{0.05em}
-  \noindent\textbf{#1} {\small $|$ \textit{#2}} \hfill {\footnotesize \href{#3}{\underline{GitHub $\nearrow$}} \quad \href{#4}{\underline{Postman $\nearrow$}}}\\[-0.2em]
+  \noindent\textbf{#1} {\small \textbar\ \textit{#2}} \hfill {\footnotesize \href{#3}{GitHub} \quad \href{#4}{Postman}}\\[-0.2em]
 }
 
 \begin{document}
