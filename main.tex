@@ -48,10 +48,13 @@
 
 % ---------- ATS Helpers ----------
 \newcommand{\resumeItem}[1]{\item \small #1}
+% One \hfill row per entry, not two: two stacked \hfill lines with short left-hand
+% text get read as a two-column table during PDF text extraction, which detaches
+% the dates from the employer/school. Location sits beside the org name instead.
 \newcommand{\resumeSubheading}[4]{
   \vspace{0.22em}
-  \textbf{#1} \hfill \textbf{#2}\\
-  \textit{#3} \hfill \textit{#4}\\[0.08em]
+  \textbf{#1}, #4 \hfill \textbf{#2}\\
+  \textit{#3}\\[0.08em]
 }
 % Text-mode separators and link labels only -- math glyphs ($|$, $\nearrow$)
 % extract as noise or nothing at all.
