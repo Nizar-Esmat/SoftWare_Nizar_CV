@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[a4paper,top=0.22in,bottom=0.22in,left=0.55in,right=0.55in]{geometry}
+\usepackage[a4paper,top=0.18in,bottom=0.18in,left=0.45in,right=0.45in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -23,7 +23,7 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\linespread{1.04}
+\linespread{1.00}
 
 % No hyphenation: line-broken words extract as "fron-tend" and split URLs apart.
 \hyphenpenalty=10000
@@ -35,9 +35,9 @@
 \RaggedRight
 
 % label=\textbullet keeps the bullet in the text font so it maps to U+2022.
-\setlist[itemize]{label=\textbullet, leftmargin=1.2em, topsep=1pt, itemsep=1pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{label=\textbullet, leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt}
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{-0.25em}\rule{\linewidth}{0.6pt}\vspace{-0.25em}]
-\titlespacing*{\section}{0pt}{0.32em}{0.15em}
+\titlespacing*{\section}{0pt}{0.20em}{0.10em}
 \hypersetup{
   pdfauthor={Nizar Esmat Fawzy},
   pdftitle={Nizar Esmat Fawzy - Software Engineer Resume},
@@ -52,30 +52,37 @@
 % text get read as a two-column table during PDF text extraction, which detaches
 % the dates from the employer/school. Location sits beside the org name instead.
 \newcommand{\resumeSubheading}[4]{
-  \vspace{0.22em}
+  \vspace{0.10em}
   \textbf{#1}, #4 \hfill \textbf{#2}\\
   \textit{#3}\\[0.08em]
 }
 % Text-mode separators and link labels only -- math glyphs ($|$, $\nearrow$)
 % extract as noise or nothing at all.
 \newcommand{\projectHeading}[3]{
-  \vspace{0.22em}
+  \vspace{0.10em}
   \noindent\textbf{#1} {\small \textbar\ \textit{#2}} \hfill {\footnotesize \href{#3}{GitHub}}\\[0.05em]
 }
+\newcommand{\projectHeadingPlain}[2]{
+  \vspace{0.10em}
+  \noindent\textbf{#1} {\small \textbar\ \textit{#2}}\\[0.05em]
+}
 \newcommand{\projectHeadingLinks}[4]{
-  \vspace{0.22em}
+  \vspace{0.10em}
   \noindent\textbf{#1} {\small \textbar\ \textit{#2}} \hfill {\footnotesize \href{#3}{GitHub} \quad \href{#4}{Postman}}\\[0.05em]
 }
 
 \begin{document}
 
+% Experience-led order: the work history and shipped projects carry the most
+% signal, so they sit above the fold. Education and certifications close it out.
 \input{sections/header}
 \input{sections/summary}
 \input{sections/education}
 \input{sections/experience}
 \input{sections/projects}
-\input{sections/volunteering}
 \input{sections/skills}
 \input{sections/languages}
+\input{sections/certifications}
+\input{sections/volunteering}
 \end{document}
 
