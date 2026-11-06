@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.19)  5 NOV 2026 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.19)  6 NOV 2026 17:10
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
@@ -346,14 +345,14 @@ LaTeX Font Info:    ... okay on input line 73.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(32.52127pt, 532.46533pt, 32.52127pt)
-* v-part:(T,H,B)=(13.00806pt, 819.03073pt, 13.00806pt)
+* v-part:(T,H,B)=(21.68121pt, 801.68442pt, 21.68121pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=532.46533pt
-* \textheight=819.03073pt
+* \textheight=801.68442pt
 * \oddsidemargin=-39.74872pt
 * \evensidemargin=-39.74872pt
-* \topmargin=-96.26193pt
+* \topmargin=-87.58878pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -398,16 +397,9 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 (C:\Users\Nizar\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-(sections/experience.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-0.
-
-(C:\Users\Nizar\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-(sections/projects.tex) (sections/skills.tex) (sections/languages.tex)
+(sections/experience.tex) (sections/projects.tex) (sections/skills.tex)
 (sections/education.tex) (sections/certifications.tex)
-(sections/volunteering.tex) [1
+(sections/volunteering.tex) (sections/languages.tex) [1
 
 {C:/Users/Nizar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Niza
 r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Nizar/Ap
@@ -420,13 +412,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10269 strings out of 467871
- 161027 string characters out of 5418376
- 601718 words of memory out of 5000000
- 39014 multiletter control sequences out of 15000+600000
- 665044 words of font info for 55 fonts, out of 8000000 for 9000
+ 10226 strings out of 467871
+ 160336 string characters out of 5418376
+ 598730 words of memory out of 5000000
+ 38975 multiletter control sequences out of 15000+600000
+ 664725 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,415b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,415b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
@@ -434,11 +426,10 @@ b><C:/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
 <C:/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
 :/Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/
 Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/
-Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/U
-sers/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (1 page, 249640 bytes).
+Users/Nizar/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb>
+Output written on main.pdf (1 page, 232843 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage[a4paper,top=0.18in,bottom=0.18in,left=0.45in,right=0.45in]{geometry}
+\usepackage[a4paper,top=0.30in,bottom=0.30in,left=0.45in,right=0.45in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
@@ -23,7 +23,7 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\linespread{1.00}
+\linespread{1.05}
 
 % No hyphenation: line-broken words extract as "fron-tend" and split URLs apart.
 \hyphenpenalty=10000
@@ -47,7 +47,7 @@
 }
 
 % ---------- ATS Helpers ----------
-\newcommand{\resumeItem}[1]{\item \small #1}
+\newcommand{\resumeItem}[1]{\item \normalsize #1}
 % One \hfill row per entry, not two: two stacked \hfill lines with short left-hand
 % text get read as a two-column table during PDF text extraction, which detaches
 % the dates from the employer/school. Location sits beside the org name instead.
@@ -79,9 +79,9 @@
 \input{sections/experience}
 \input{sections/projects}
 \input{sections/skills}
-\input{sections/languages}
 \input{sections/education}
 \input{sections/certifications}
 \input{sections/volunteering}
+\input{sections/languages}
 \end{document}
 
